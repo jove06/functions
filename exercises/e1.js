@@ -30,12 +30,12 @@ logMessage();
  * logMyMessage('My message') => 'My message'
 */
 
-let myMessage = "I log my first message!";
 
-function logMyMessage(){
-  console.log(myMessage);
+function logMyMessage(str){
+  console.log(str);
 };
-logMyMessage();
+
+logMyMessage('I log my first message!');
 
 
 
@@ -49,12 +49,11 @@ logMyMessage();
   * The name is a string value passed as an argument
  * logMessageWithMyName('Andrey') => 'My name is Andrey!'
 */
-let myName = "My name is Lex!"
-function logMessageWithMyName(){
-  console.log(myName);
+function logMessageWithMyName(str){
+  console.log('My name is ' + str + '!');
 };
 
-logMessageWithMyName();
+logMessageWithMyName('Lex');
 
 
 

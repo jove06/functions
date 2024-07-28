@@ -87,6 +87,7 @@ console.log(getValueWithConditionThree(20, 30));
 
 
 
+
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-3"
 // If the test has all tests passed, switch to the next exercise file
@@ -94,10 +95,10 @@ console.log(getValueWithConditionThree(20, 30));
 
 
 // Do not delete or change the lines beneath
-// const f = {
-//   doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
-//   getValueWithConditionOne: getValueWithConditionOne || undefined,
-//   getValueWithConditionTwo: getValueWithConditionTwo || undefined,
-//   getValueWithConditionThree: getValueWithConditionThree || undefined,
-// }
-// export { f };
+const f = {
+  doesArrayIncludeItemsBetweenVals: doesArrayIncludeItemsBetweenVals || undefined,
+  getValueWithConditionOne: getValueWithConditionOne || undefined,
+  getValueWithConditionTwo: getValueWithConditionTwo || undefined,
+  getValueWithConditionThree: getValueWithConditionThree || undefined,
+}
+export { f };
