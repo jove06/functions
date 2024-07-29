@@ -46,10 +46,8 @@ console.log(doesArrayIncludeItemsBetweenVals([2,4,2], 5, 10));
  */
 
 function getValueWithConditionOne(num1, num2){
-  if (num1 && num2 === 40){
-    let sum = num1 + num2;
-    return sum;
-  } else if (num1 && num2 != 40){
+  if (num1 === 40 && num2 === 40){
+    return num1 + num2;} else {
     let doubledSum = (num1 + num2) * 2;
     return doubledSum;
   }
@@ -57,34 +55,33 @@ function getValueWithConditionOne(num1, num2){
 
 console.log(getValueWithConditionOne(40, 40));
 console.log(getValueWithConditionOne(20, 30));
+console.log(getValueWithConditionOne(50, 40));
 
 
 
 const getValueWithConditionTwo = (num1, num2) => 
-  {if (num1 && num2 === 40)
+  {if (num1 === 40 && num2 === 40)
     {return num1 + num2;} 
-    else if (num1 && num2 != 40)
-      {return (num1 + num2) * 2}}
+  else {return (num1 + num2) * 2}
+  }
 
 console.log(getValueWithConditionTwo(40,40));
 console.log(getValueWithConditionTwo(20,30));
+console.log(getValueWithConditionTwo(50, 40));
 
 
 
 
-const getValueWithConditionThree = function getValueWithConditionOne(num1, num2){
-  if (num1 && num2 === 40){
-    let sum = num1 + num2;
-    return sum;
-  } else if (num1 && num2 != 40){
-    let doubledSum = (num1 + num2) * 2;
-    return doubledSum;
-  }
+
+const getValueWithConditionThree = function(num1, num2){
+  if(num1 === 40 && num2 === 40)
+    {return num1 + num2;} 
+  else{return (num1 + num2) * 2;}
 }
 
-console.log(getValueWithConditionThree(40, 40));
-console.log(getValueWithConditionThree(20, 30));
-
+console.log(getValueWithConditionThree(40,40));
+console.log(getValueWithConditionThree(20,30));
+console.log(getValueWithConditionThree(50, 40));
 
 
 
